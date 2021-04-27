@@ -1,7 +1,6 @@
-function languageSelector(region="US", country="US"){
+function languageSelector(region="US", country="US", channel=""){
 
 	var lang = jQuery("#Q_lang").val();	
-	var channel ="${e://Field/Channel}";
 	console.log(channel);
 	const countriesWithCommaDecimal = ["BE","CH","DE","DK","FI","LU","NL","NO","SE"];
 	
@@ -246,7 +245,7 @@ function roleDefinitions(language){
 };
 
 
-function languageSettings(region, country){
+function languageSettings(region, country, channel){
 	
 	jQuery(document).ready(function(){
 		if (jQuery("[id^='Authenticator']").length !=0){
@@ -260,7 +259,7 @@ function languageSettings(region, country){
 			jQuery(".LanguageSelectorContainer").show();
 		}
 		else {
-			languageSelector(region, country);
+			languageSelector(region, country, channel);
 		}
 	});
 };
