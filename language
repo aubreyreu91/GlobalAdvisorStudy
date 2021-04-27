@@ -42,13 +42,13 @@ function languageSelector(region="US", country="US"){
 			break;
       
 		case "CA":
-      Qualtrics.SurveyEngine.setEmbeddedData("Sign" ,"$");
+      			Qualtrics.SurveyEngine.setEmbeddedData("Sign" ,"$");
 			jQuery("#Q_lang").val("EN-CA");
       
-      if (country == "CA"){
+    			if (country == "CA"){
 				Qualtrics.SurveyEngine.setEmbeddedData("Cr" ,"CAD");
-        }
-        break;
+      			}
+      			break;
      
 		
 		default:
