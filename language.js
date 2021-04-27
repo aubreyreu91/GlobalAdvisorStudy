@@ -2,6 +2,7 @@ function languageSelector(region="US", country="US"){
 
 	var lang = jQuery("#Q_lang").val();	
 	var channel ="${e://Field/Channel}";
+	console.log(channel);
 	const countriesWithCommaDecimal = ["BE","CH","DE","DK","FI","LU","NL","NO","SE"];
 	
 	Qualtrics.SurveyEngine.setEmbeddedData("Delimiter" ,countriesWithCommaDecimal.indexOf(country) > -1 ? "." : ",");
