@@ -98,7 +98,26 @@ function translations(language){
 				"SubmitSurvey" : "VRAGENLIJST VERZENDEN"
 			};
 			break;
-		
+		case "CA":
+			var dict = {
+				//Core
+				"EmailText" : "Email",
+				"PasswordText" : "Password",
+				"Location" : "Location",
+				"PostValid" : "Please enter a valid area code",
+				"PostError" : "is not a valid are code",
+				"NewClientsError" : "For new clients, you must indicate a value greater than or equal to",
+				"LostClientsError" : "Lost clients must equal",
+				//M&A
+				"Months" : "months",
+				// All modules
+				"MM" : "MM",
+				"Million": "million",
+				"Billion": "billion",
+				"SubmitSurvey" : "SUBMIT SURVEY"
+			};
+			break;
+			
 		default:
 			var dict = {
 				//Core
