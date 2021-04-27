@@ -17,6 +17,11 @@ function languageSelector(region="US", country="US"){
 					jQuery("#Q_lang").val("DE");
 				}
 			}
+			else if (country == "NL" && Channel == "UKWealth"){
+				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
+					jQuery('#Q_lang').val('EN-GBW');
+				}
+			}
 			else{
 				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
 					jQuery("#Q_lang").val("EN-GB");
