@@ -21,7 +21,7 @@ function languageSelector(region="US", country="US"){
 			}
 			else if (country == "GB" && channel == "UKWealth"){
 				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
-					jQuery("#Q_lang").val("EN-GB");
+					jQuery("#Q_lang").val("EN-GBW");
 				}}
 			else{
 				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
