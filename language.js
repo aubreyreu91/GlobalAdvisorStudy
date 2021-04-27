@@ -1,6 +1,7 @@
 function languageSelector(region="US", country="US"){
 
 	var lang = jQuery("#Q_lang").val();	
+	var channel ="${e://Field/Channel}";
 	const countriesWithCommaDecimal = ["BE","CH","DE","DK","FI","LU","NL","NO","SE"];
 	
 	Qualtrics.SurveyEngine.setEmbeddedData("Delimiter" ,countriesWithCommaDecimal.indexOf(country) > -1 ? "." : ",");
@@ -17,13 +18,17 @@ function languageSelector(region="US", country="US"){
 					jQuery("#Q_lang").val("DE");
 				}
 			}
+			else if (country == "GB" && channel == "UKWealth"){
+				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
+					jQuery("#Q_lang").val("EN-GB");
+				}}
 			else{
 				if (lang != "EN-GB" && lang != "DE" && lang != "NL"){
 					jQuery("#Q_lang").val("EN-GB");
 				}
 			}
+			
 			break;
-		
 		case "AU":
 			Qualtrics.SurveyEngine.setEmbeddedData("Sign" ,"$");
 			jQuery("#Q_lang").val("EN-AU");
